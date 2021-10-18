@@ -3,7 +3,7 @@ const fs = require('fs');
 
 gplayHandler.developer({devId: 'NorthStudio'}).then(data => {
   let json = JSON.stringify({
-    data: JSON.stringify(data)
+    data: data
   });
   fs.writeFile('nstudio.json', json, (e) => {
     if (e) {
